@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Htpp\Controllers\ProjectController;
+
+Route::get('/', [ProjectController :: class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
