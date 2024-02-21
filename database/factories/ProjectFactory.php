@@ -17,7 +17,7 @@ class ProjectFactory extends Factory
     public function definition()
     {
         return [
-            'img' => fake() -> unique() -> url(),
+            'img' => fake() -> unique() -> imageUrl(),
             'name' => fake() -> unique() -> word(),
             'description' => fake() -> sentence(6),
         ];

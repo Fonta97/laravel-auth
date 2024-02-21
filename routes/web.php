@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Htpp\Controllers\ProjectController;
+use App\Http\Controllers\ProjectController;
 
 Route::get('/', [ProjectController :: class, 'index']);
 
